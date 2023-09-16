@@ -6,10 +6,6 @@ cap = cv2.VideoCapture(0)  # 0은 기본 웹캠을 나타냅니다. 다른 카�
 # 프레임 읽기
 ret, frame = cap.read()
 
-# 테스트 출력
-# cv2.imshow('Webcam Frame', frame)
-# cv2.waitKey(0)
-
 # 이미지 파일로 저장
 save_jpg = "captured_image.jpg"
 cv2.imwrite(save_jpg, frame)
